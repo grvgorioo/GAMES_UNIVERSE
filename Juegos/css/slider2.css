@@ -1,0 +1,51 @@
+.slider::-webkit-scrollbar{
+    background-color: #3c3257;
+}
+.slider::-webkit-scrollbar-thumb{
+    background-color: #171324;
+}
+.contenedor{
+    padding: 2rem;
+    align-items: center;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem --0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.slider video{
+    object-fit: cover;
+}
+.slider img, video{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    
+    width: 100%;
+    height: 100%;
+
+}
+@media(max-width:991px){
+    .products{
+        width: 100%;
+        height: 300px;
+    }
+    .contenedor{
+        width: 100%;
+        height: 100%;
+    }
+    .slider-wrappe{
+        width: 100%;
+        height: 100px;
+        
+    }
+}
+
